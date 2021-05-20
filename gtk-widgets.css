@@ -686,8 +686,9 @@ scrolledwindow.frame {
 tooltip,
 tooltip.background  {
 	background-color: @theme_tooltip_bg_color;
-	border: solid 1px alpha(@theme_tooltip_fg_color, .3);
-	color: alpha(@theme_tooltip_fg_color, .8);
+	border: solid 1px @theme_tooltip_fg_color;
+	border-radius: 10px;
+	color: @theme_tooltip_fg_color;
 }
 tooltip *, .tooltip * {
 	background-color: transparent;
