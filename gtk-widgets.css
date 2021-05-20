@@ -182,9 +182,9 @@ check:indeterminated:disabled {
 radio,
 .view.cellradio {
 	-gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked.png"));
-	margin: .3em .4em .3em .3em;
-	min-height: 1em;
-	min-width: 1em;
+	margin: .3em 1em .3em .3em;
+	min-height: 16px;
+	min-width: 16px;
 }
 radio:checked {
 	-gtk-icon-source: -gtk-scaled(url("assets/radio-checked.png"));
