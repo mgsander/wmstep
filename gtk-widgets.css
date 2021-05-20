@@ -64,17 +64,16 @@ rubberband {
 button, .button {
 	background: @theme_bg_color;
 	border-image: url("assets/button.png") 3 / 3px stretch;
-	padding: .35em;
+	padding: .5em;
 }
 button:hover, .button:hover {
-	background-color: shade(@theme_bg_color, 1.05);
 }
 button:active, .button:active,
 button:active:hover, .button:active:hover,
 button.toggle:checked,
 button.toggle:active:hover,
 stackswitcher button:checked {
-	background-color: shade(@theme_bg_color, .9);
+	background-color: @theme_selected_bg_color;
 	border-image-source: url("assets/button-pressed.png");
 }
 button:focus, .button:focus {
