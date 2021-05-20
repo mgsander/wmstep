@@ -333,23 +333,27 @@ notebook header.right tabs {
 notebook tab,
 notebook.frame > .frame {
 	background: @theme_tab_inactive_color;
-	padding: .3em .4em .1em .4em;
+	padding: .4em;
 }
 notebook header.top tab,
 notebook.frame > .frame.top {
 	border-image: url("assets/notebook-tab-top.png") 2 / 2px stretch;
+	padding-bottom: .2em;
 }
 notebook header.bottom tab,
 notebook.frame > .frame.bottom {
 	border-image: url("assets/notebook-tab-bottom.png") 2 / 2px stretch;
+	padding-top: .2em;
 }
 notebook header.left tab,
 notebook.frame > .frame.left {
 	border-image: url("assets/notebook-tab-left.png") 2 / 2px stretch;
+	padding-right: .2em;
 }
 notebook header.right tab,
 notebook.frame > .frame.right {
 	border-image: url("assets/notebook-tab-right.png") 2 / 2px stretch;
+	padding-left: .2em;
 }
 notebook header tab:checked,
 notebook.frame > .frame:active {
@@ -359,13 +363,13 @@ notebook header.top tab:checked {
 	margin-bottom: -1px;
 }
 notebook header.bottom tab:checked {
-	margin-bottom: -2px;
+	margin-top: -1px;
 }
 notebook header.left tab:checked {
 	margin-right: -1px;
 }
 notebook header.right tab:checked {
-	margin-left: -2px;
+	margin-left: -1px;
 }
 notebook tab button {
 	background-color: transparent;
