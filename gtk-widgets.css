@@ -677,7 +677,7 @@ switch:checked {
 .sidebar,
 scrolledwindow,
 scrolledwindow.frame {
-	border-image: url("assets/frame-etched-out.png") 3 / 3px stretch;
+	border-image: url("assets/entry.png") 3 / 3px stretch;
 	padding: 2px;
 }
 
