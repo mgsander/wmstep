@@ -61,7 +61,7 @@ rubberband {
 button, .button {
 	background: @theme_bg_color;
 	border-image: url("assets/button.png") 3 / 3px stretch;
-	padding: .5em;
+	padding: 7px;
 }
 button:hover, .button:hover {
 }
@@ -297,16 +297,23 @@ spinbutton entry {
 /**************
  * comboboxes *
  **************/
-combobox arrow {
-	-gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
-	color: @theme_fg_color;
-	margin: -.1em;
-	min-height: 1.5em;
-	min-width: 1.5em;
+combobox button.combo { /* normal combo */
+	padding: 1px 3px 2px 5px;
 }
-combobox button:first-child arrow {
-	border-image: url("assets/combobox-arrow-separator.png") 2 / 2px stretch;
-	padding-left: .5em;
+combobox button.combo:nth-child(2) { /* combo with entry */
+	padding: 0 3px 0 1px;
+}
+combobox entry.combo {
+	padding: 5px 5px;
+}
+combobox arrow {
+	-gtk-icon-transform: scale(0);
+	background-image: -gtk-scaled(url("assets/combobox-arrow.png"));
+	background-repeat: no-repeat;
+	background-position: center center;
+	color: @theme_fg_color;
+	min-height: 16px;
+	min-width: 16px;
 }
 
 /*********
