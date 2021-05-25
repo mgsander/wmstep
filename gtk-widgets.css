@@ -85,6 +85,9 @@ button.link {
 button.link > label {
 	text-decoration-line: underline;
 }
+button.toggle:disabled * {
+	text-shadow: none;
+}
 button.color * {
 	border-image: url("assets/frame-etched-out.png") 2 / 2px stretch;
 	margin: 0 .3em;
