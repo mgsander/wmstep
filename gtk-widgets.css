@@ -89,9 +89,9 @@ button.toggle:disabled * {
 	text-shadow: none;
 }
 button.color * {
-	border-image: url("assets/frame-etched-out.png") 2 / 2px stretch;
-	margin: 0 .3em;
-	min-height: 1.2em;
+	border-image: url("assets/button-color.png") 2 / 2px stretch;
+	margin: 6px;
+	min-height: 12px;
 }
 
 /**************
