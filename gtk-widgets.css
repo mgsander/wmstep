@@ -155,7 +155,7 @@ scrollbar.horizontal slider {
 	padding: 1px;
 }
 scrollbar.vertical button.up {
-	-gtk-icon-source: url("assets/scrollbar-button-top.png");
+	-gtk-icon-source: -gtk-scaled(url("assets/scrollbar-button-top.png"));
 }
 scrollbar.vertical button.up:active {
 	-gtk-icon-source: -gtk-scaled(url("assets/scrollbar-button-disabled-top.png"));
