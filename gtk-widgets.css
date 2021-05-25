@@ -216,9 +216,9 @@ check:indeterminated:disabled {
 	-gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-disabled.png"));
 }
 
-/******************
- * radion buttons *
- ******************/
+/*****************
+ * radio buttons *
+ *****************/
 radio,
 .view.cellradio {
 	-gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked.png"));
