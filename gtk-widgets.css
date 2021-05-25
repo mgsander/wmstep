@@ -97,49 +97,89 @@ button.color * {
 /**************
  * scrollbars *
  **************/
+scrollbar.vertical {
+    -GtkScrollbar-has-backward-stepper: false;
+    -GtkScrollbar-has-forward-stepper: true;
+    -GtkScrollbar-has-secondary-backward-stepper: true;
+    -GtkScrollbar-has-secondary-forward-stepper: false;
+}
+scrollbar.horizontal {
+    -GtkScrollbar-has-backward-stepper: true;
+    -GtkScrollbar-has-forward-stepper: false;
+    -GtkScrollbar-has-secondary-backward-stepper: false;
+    -GtkScrollbar-has-secondary-forward-stepper: true;
+}
 scrollbar button,
 scrollbar button:hover,
 scrollbar button:active,
 scrollbar button:active:hover,
 scrollbar button:disabled {
-	background: @theme_bg_color no-repeat;
 	color: black;
 	font-size: .8em;
-	min-height: .8rem;
-	min-width: .8rem;
-	padding: 2px;
+	min-height: 14px;
+	min-width: 14px;
+	padding: 1px;
 }
-scrollbar button:disabled {
-	color: shade(@theme_bg_color, .6);
+scrollbar button:active,
+scrollbar button:active:hover {
+	border-image-source: url("assets/button.png");
+}
+scrollbar.vertical button.up,
+scrollbar.vertical button.down {
+	margin: 0 1px;
+}
+scrollbar.horizontal button.up,
+scrollbar.horizontal button.down {
+	margin: 1px 0;
+}
+scrollbar trough {
+	background-repeat: repeat;
+	background-image: url("assets/scrollbar-trough.png");
+	border: 1px solid @theme_bg_color;
 }
 scrollbar slider {
 	background: @theme_bg_color;
 	border-image: url("assets/button.png") 2 / 2px stretch;
 }
-scrollbar slider:hover {
-	background-color: shade(@theme_bg_color, 1.05);
-}
 scrollbar.vertical slider {
-	min-height: .5rem;
-	min-width: .8rem;
-	padding: 2px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url("assets/scrollbar-slider.png");
+	min-height: 30px;
+	min-width: 14px;
+	padding: 1px;
 }
 scrollbar.horizontal slider {
-	min-height: .8rem;
-	min-width: .5rem;
-	padding: 2px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url("assets/scrollbar-slider.png");
+	min-height: 14px;
+	min-width: 30px;
+	padding: 1px;
 }
 scrollbar.vertical button.up {
-	-gtk-icon-source: -gtk-icontheme("pan-up-symbolic");
+	-gtk-icon-source: url("assets/scrollbar-button-top.png");
+}
+scrollbar.vertical button.up:active {
+	-gtk-icon-source: -gtk-scaled(url("assets/scrollbar-button-disabled-top.png"));
 }
 scrollbar.vertical button.down {
-	-gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
+	-gtk-icon-source: -gtk-scaled(url("assets/scrollbar-button-bottom.png"));
+}
+scrollbar.vertical button.down:active {
+	-gtk-icon-source: -gtk-scaled(url("assets/scrollbar-button-disabled-bottom.png"));
 }
 scrollbar.horizontal button.up {
-	-gtk-icon-source: -gtk-icontheme("pan-start-symbolic");
+	-gtk-icon-source: -gtk-scaled(url("assets/scrollbar-button-left.png"));
+}
+scrollbar.horizontal button.up:active {
+	-gtk-icon-source: -gtk-scaled(url("assets/scrollbar-button-disabled-left.png"));
 }
 scrollbar.horizontal button.down {
-	-gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
+	-gtk-icon-source: -gtk-scaled(url("assets/scrollbar-button-right.png"));
+}
+scrollbar.horizontal button.down:active {
+	-gtk-icon-source: -gtk-scaled(url("assets/scrollbar-button-disabled-right.png"));
 }
 
 /**************
