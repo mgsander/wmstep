@@ -320,7 +320,7 @@ combobox arrow {
 }
 
 /*********
- * menus *
+ * TODO menus *
  *********/
 menubar {
 	border-image: url("assets/button.png") 2 / 2px stretch;
@@ -462,7 +462,7 @@ notebook.frame > .frame {
 }
 
 /************
- * expander *
+ * TODO expander *
  ************/
 expander arrow {
 	min-width: 16px;
@@ -474,7 +474,7 @@ expander arrow:checked {
 }
 
 /********************************
- * CSD header and window border *
+ * TODO CSD header and window border *
  ********************************/
 headerbar {
 	background-color: @theme_bg_color;
@@ -488,7 +488,7 @@ decoration {
 }
 
 /****************************
- * application notification *
+ * TODO application notification *
  ****************************/
 .app-notification {
 	background-color: @theme_info_bg_color;
@@ -500,7 +500,7 @@ decoration {
 }
 
 /************
- * popovers *
+ * TODO popovers *
  ************/
 popover {
 	border: solid 1px shade(@theme_bg_color, 0.5);
@@ -510,7 +510,7 @@ popover .flat {
 }
 
 /***********
- * toolbar *
+ * TODO toolbar *
  ***********/
 toolbar {
 	background: @theme_bg_color;
@@ -524,7 +524,7 @@ toolbar separator {
 }
 
 /*************
- * statusbar *
+ * TODO statusbar *
  *************/
 statusbar button {
 	padding: 2px;
@@ -549,7 +549,7 @@ statusbar {
 }
 
 /*************
- * listboxes *
+ * TODO listboxes *
  *************/
 list row {
 	padding: 5px;
@@ -559,7 +559,7 @@ list row:hover {
 }
 
 /**************
- * separators *
+ * TODO separators *
  **************/
 separator.horizontal {
 	border-image: url("assets/separator-horizontal.png") 1 / 1px stretch;
@@ -571,7 +571,7 @@ separator.vertical {
 }
 
 /*********
- * paned *
+ * TODO paned *
  *********/
 paned > separator {
 	background: url("assets/paned-separator-vertical.png") no-repeat center;
@@ -602,7 +602,7 @@ box > frame {
 }
 
 /**************
- * button box *
+ * TODO button box *
  **************/
 buttonbox.horizontal button {
 	margin: .2em .4em;
@@ -627,7 +627,7 @@ scrollbar {
 }
 
 /*********
- * scale *
+ * TODO scale *
  *********/
 scale {
 	margin: 1px;
@@ -670,7 +670,7 @@ scale.vertical mark indicator {
 }
 
 /***************
- * color scale *
+ * TODO color scale *
  ***************/
 scale.color trough {
 	padding: 0;
@@ -691,7 +691,7 @@ scale.color.vertical slider {
 }
 
 /***************
- * progressbar *
+ * TODO progressbar *
  ***************/
 progressbar {
 	font-size: .8em;
@@ -720,7 +720,7 @@ treeview.view.trough {
 }
 
 /************
- * levelbar *
+ * TODO levelbar *
  ************/
 levelbar block {
 	margin: 1px;
@@ -732,7 +732,7 @@ levelbar block.filled {
 }
 
 /**********
- * switch *
+ * TODO switch *
  **********/
 switch {
 	background-color: shade(@theme_bg_color, .9);
@@ -781,7 +781,7 @@ tooltip decoration {
 }
 
 /*************
- * calendars *
+ * TODO calendars *
  *************/
 calendar {
 	padding: 2px;
@@ -801,7 +801,7 @@ calendar.highlight {
 }
 
 /************
- * infobars *
+ * TODO infobars *
  ************/
 .info {
 	background-color: @theme_info_bg_color;
@@ -817,7 +817,7 @@ calendar.highlight {
 }
 
 /***********************
- * file chooser dialog *
+ * TODO file chooser dialog *
  ***********************/
 dialog filechooser placessidebar.sidebar.frame .sidebar-row {
 	padding: .3em 1em;
@@ -861,7 +861,7 @@ dialog filechooser frame border {
 }
 
 /*****************
- * color chooser *
+ * TODO color chooser *
  *****************/
 dialog colorchooser colorswatch {
 	border-image: url("assets/frame-etched-out.png") 2 / 2px stretch;
@@ -885,7 +885,7 @@ colorchooser .popover {
 }
 
 /****************
- * print dialog *
+ * TODO print dialog *
  ****************/
 printdialog > box > box {
 	padding: 5px;
@@ -903,7 +903,7 @@ printdialog paper {
 }
 
 /*********************
- * Spinner Animation *
+ * TODO spinner animation *
  *********************/
 @keyframes spin {
 	to { -gtk-icon-transform: rotate(1turn); }
