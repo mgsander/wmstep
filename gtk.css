@@ -18,9 +18,9 @@
 
 /* Default color scheme */
 
-@define-color theme_base_color #aeaaae;
+@define-color theme_base_color #aaaaaa;
 
-@define-color theme_bg_color #aeaaae;
+@define-color theme_bg_color #aaaaaa;
 @define-color theme_fg_color #000000;
 
 @define-color theme_selected_bg_color #ffffff;
